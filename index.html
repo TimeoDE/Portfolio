@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Timéo – Portfolio 3D (Blender)</title>
+  <meta name="description" content="Portfolio 3D Blender – Props, environnements, rendus." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#top" aria-label="Retour en haut">
+        <span class="dot"></span>
+        <span>Timéo • Portfolio 3D</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#portfolio">Book</a>
+        <a href="#about">À propos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="kicker">Blender • 3D • Jeu vidéo</p>
+          <h1>Portfolio 3D</h1>
+          <p class="lead">
+            Mes créations 3D réalisées sur <strong>Blender</strong> : props, essais de rendu et scènes.
+            (Contenu mis à jour au fil de mes projets.)
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn" href="#portfolio">Voir le book</a>
+            <a class="btn btn-ghost" href="#contact">Me contacter</a>
+          </div>
+
+          <ul class="chips" aria-label="Compétences">
+            <li>Modélisation</li>
+            <li>Rendu</li>
+            <li>UV / Texturing (selon projets)</li>
+          </ul>
+        </div>
+
+        <div class="hero-card" aria-label="Aperçu du portfolio">
+          <button class="hero-arrow left" type="button" aria-label="Image précédente">‹</button>
+
+          <!-- IMPORTANT : image existante chez toi -->
+          <img
+            id="heroCarouselImg"
+            src="assets/img/render_result_the_last.jpg"
+            alt="Aperçu du portfolio"
+            loading="lazy"
+          />
+
+          <button class="hero-arrow right" type="button" aria-label="Image suivante">›</button>
+          <div class="hero-dots" id="heroDots" aria-label="Indicateur d’images"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Book</h2>
+          <p>Cliquer sur un projet pour voir les détails.</p>
+        </div>
+
+        <div class="grid" id="projectGrid">
+
+          <article class="card project"
+            data-title="Scène 01 - Apocalypse"
+            data-software="Blender"
+            data-date="December 2024"
+            data-desc="Ma toute première scène 3D post apocalyptique en utilsant des assets disponibles depuis internet sauf pour la motte de terre et le tunnel."
+            data-images="assets/img/render_result_the_last.jpg,assets/img/render_result_the_last2.jpg"
+          >
+            <img src="assets/img/render_result_the_last.jpg" alt="Scène 01 – aperçu" loading="lazy" />
+            <div class="card-body">
+              <h3>Scène 01 - Apocalypse</h3>
+              <p class="meta">Blender • Décembre 2024</p>
+              <p class="small">Modélisation + rendu.</p>
+              <span class="linklike">Voir plus →</span>
+            </div>
+          </article>
+
+          <article class="card project"
+            data-title="Scène 02 – Poste-Apo"
+            data-software="Blender"
+            data-date="October 2025"
+            data-desc="Ma deuxième scène 3D Post-Apocalyptique, melangeant futurisme dans le fond."
+            data-images="assets/img/Piece_sombre_Final_result.jpg"
+          >
+            <img src="assets/img/Piece_sombre_Final_result.jpg" alt="Scène 02 – aperçu" loading="lazy" />
+            <div class="card-body">
+              <h3>Scène 02 – Post-Apo</h3>
+              <p class="meta">Blender • Octobre 2025</p>
+              <p class="small">Modélisation + rendu</p>
+              <span class="linklike">Voir plus →</span>
+            </div>
+          </article>
+
+          <article class="card project"
+            data-title="Scène 03 – Boutique RétroCafé"
+            data-software="Blender"
+            data-date="November 2025"
+            data-desc="Modélisation 3D suite à une demande. Le batiment, contoir, logo LED a été fait à la main, le reste des objets sont des assets en ligne."
+            data-images="assets/img/Boutique_toomuch.jpg,assets/img/Boutique_Final_result_2.jpg,assets/img/Coffee.jpg,assets/img/Shop.jpg,assets/img/VideoGames.jpg"
+          >
+            <img src="assets/img/Boutique_toomuch.jpg" alt="Scène 03 – aperçu" loading="lazy" />
+            <div class="card-body">
+              <h3>Scène 03 – Boutique RétroCafé</h3>
+              <p class="meta">Blender • Novembre 2025</p>
+              <p class="small">Modélisation + rendu</p>
+              <span class="linklike">Voir plus →</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="showreel" class="video-reveal">
+      <div class="video-sticky">
+        <video
+          id="showreelVideo"
+          class="video-el"
+          src="assets/video/Fusee.mp4"
+          muted
+          playsinline
+          preload="metadata"
+        ></video>
+
+        <div class="video-overlay">
+          <div class="container">
+            <p class="kicker">Showreel</p>
+            <h2>Vidéo</h2>
+            <p class="lead">Ma première animation / rendus Blender.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container two-col">
+        <div>
+          <h2>À propos</h2>
+          <p>
+            Je m’appelle <strong>Timéo De Sousa E Silva</strong> et je développe ma pratique de la 3D,
+            principalement sur <strong>Blender</strong>. J’aime créer des environnements, tester des rendus et
+            progresser sur les bases de la création 3D orientée jeu vidéo.
+          </p>
+          <p>
+            Objectif : intégrer <strong>Gaming Campus (G.ART)</strong> et développer mes compétences
+            artistiques et techniques dans un cadre professionnalisant.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h3>Infos rapides</h3>
+          <ul>
+            <li><strong>Logiciel :</strong> Blender</li>
+            <li><strong>Centres :</strong> 3D, jeux vidéo, création numérique</li>
+            <li><strong>Book :</strong> props & scènes</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Tu peux me joindre ici :</p>
+        </div>
+
+        <div class="contact-card">
+          <div>
+            <p class="label">Email</p>
+            <p><a href="mailto:timeo.desousaesilva@gmail.com">timeo.desousaesilva@gmail.com</a></p>
+          </div>
+          <div>
+            <p class="label">Téléphone</p>
+            <p><a href="tel:+33644055510">+33 6 44 05 55 10</a></p>
+          </div>
+          <div>
+            <p class="label">Portfolio</p>
+            <p class="small muted">https://github.com/TimeoDE/Portfolio</p>
+          </div>
+        </div>
+
+        <footer class="site-footer">
+          <p class="small muted">© <span id="year"></span> Timéo — Portfolio 3D</p>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL (popup) pour les détails projet -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-label="Détails du projet">
+      <button class="modal-close" type="button" aria-label="Fermer" data-close="true">✕</button>
+      <div class="modal-content">
+        <h3 id="modalTitle">Titre</h3>
+        <p class="meta" id="modalMeta"></p>
+        <p id="modalDesc"></p>
+	
+        <div class="modal-gallery" id="modalGallery"></div>
+    
+   <!--
+        <div class="modal-note">
+          <p class="small muted">
+            Conseil : ajoute une image “wireframe” si tu en as, c’est souvent apprécié.
+          </p>
+        </div>
+   -->
+      </div>
+    </div>
+  </div>
+
+  <!-- IMAGE FULLSCREEN VIEWER -->
+  <div class="img-viewer" id="imgViewer" aria-hidden="true">
+    <div class="img-backdrop"></div>
+    <img id="imgViewerImg" alt="Aperçu plein écran">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
